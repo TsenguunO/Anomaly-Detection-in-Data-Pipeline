@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COMP9900 FlaskApp - GPTea - Backend</title>
+    <style>
+        p {
+            margin-bottom: 20px; /* Adds space between paragraphs */
+            padding: 10px; /* Adds space inside the paragraph */
+            background-color: #f0f0f0; /* Light grey background */
+            border-left: 4px solid #007BFF; /* Solid color accent on the left */
+            font-family: Arial, sans-serif; /* Makes text easier to read */
+        }
+    </style>
+</head>
+<body>
+    <h1>COMP9900 GPTea Backend!</h1>
+    <h2>API LIST</h2>
+    <p>UTC Time now: {{ utc_dt }}</p>
+
+    {% for key, value in bp_dict.items() %}
+    <p>
+        <a href="{{ value }}">{{ key }}</a>
+    </p>
+    {% endfor %}
+</body>
+</html>

@@ -1,0 +1,9 @@
+Flask
+flask_restx
+SQLAlchemy
+sqlalchemy-utils
+pymysql
+cryptography
+mlflow
+flask_cors
+psutil
